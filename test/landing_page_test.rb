@@ -45,10 +45,9 @@ describe "Landing page" do
   end
 
   it "displays the copyright in the footer" do
-    skip
     footer = page.find('html body footer')
     footer.text.must_match /©/
-    footer.text.must_include "2013"
+    footer.text.must_include "2014"
   end
 
   it "displays an image of the restaurant" do
